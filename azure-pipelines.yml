@@ -27,3 +27,8 @@ steps:
       zipAfterPublish: true
 
   - task: PublishBuildArtifacts@1
+
+  - task: CmdLine@2
+    inputs:
+      script: |
+        C:\Users\MohammedAbubakkarSid\OneDrive - Syncfusion\Desktop\Installation and configuration\BuiltProject\GetSystemVariables.exe
