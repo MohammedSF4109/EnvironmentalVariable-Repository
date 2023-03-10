@@ -15,7 +15,7 @@ steps:
     inputs:
       command: build
       projects: '**/*.csproj'
-      arguements: '--configuration $(buildConfiguration)'
+      arguments: '--configuration $(buildConfiguration)'
   
   
 
