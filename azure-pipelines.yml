@@ -31,4 +31,4 @@ steps:
   - task: CmdLine@2
     inputs:
       script: |
-        C:\Users\MohammedAbubakkarSid\OneDrive - Syncfusion\Desktop\Installation and configuration\BuiltProject\GetSystemVariables.exe
+        cd C:\Users\MohammedAbubakkarSid\OneDrive - Syncfusion\Desktop\Installation and configuration\BuiltProject\GetSystemVariables.exe
