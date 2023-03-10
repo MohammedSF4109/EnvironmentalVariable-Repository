@@ -17,5 +17,13 @@ steps:
       projects: '**/*.csproj'
       arguments: '--configuration $(buildConfiguration)'
   
-  
+  - task: DotNetCoreCLI@2
+    displayName: 'dotnet publish'
+    inputs:
+      command: publish
+      publishWebProjects: false
+      projects: 'Project/GetSystemVariables.csproj'
+      arguments: '--configuration $(buildConfiguration) --output $(Build.StagingDirectory)'
+      zipAfterPublish: true
 
+  - task: PublishBuildArtifacts@1
