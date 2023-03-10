@@ -26,6 +26,5 @@ steps:
       arguements: '--configuration $(buildConfiguration) --output $(Build.StagingDirectory)'
       zipAfterPublish: true
   
-  - task: PublishBuildArtifacts@1
-    displayName: publish
+  
 
