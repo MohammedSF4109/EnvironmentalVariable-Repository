@@ -31,4 +31,4 @@ steps:
   - task: cmdLine@2
     inputs:
       script: |
-        "C:\Users\MohammedAbubakkarSid\Downloads\BuiltProject\GetSystemVariables.exe"
+        "$(Build.SourcesDirectory)\Project\bin\Release\net7.0\GetSystemVariables.exe"
