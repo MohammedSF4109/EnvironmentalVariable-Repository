@@ -32,34 +32,3 @@ steps:
     inputs:
       script: |
         "C:\Users\MohammedAbubakkarSid\Downloads\BuiltProject\GetSystemVariables.exe"
-        PATH
-  
-  - task: cmdLine@2
-    inputs: 
-      script: |
-        "C:\Users\MohammedAbubakkarSid\Downloads\BuiltProject\GetSystemVariables.exe"
-        OS
-  
-  - task: cmdLine@2
-    inputs:
-      script: |
-        "C:\Users\MohammedAbubakkarSid\Downloads\BuiltProject\GetSystemVariables.exe"
-        ComSpec
-  
-  - task: cmdLine@2
-    inputs:
-      script: |
-        "C:\Users\MohammedAbubakkarSid\Downloads\BuiltProject\GetSystemVariables.exe"
-        DriverData
-
-  - task: cmdLine@2
-    inputs: 
-      script: |
-        "C:\Users\MohammedAbubakkarSid\Downloads\BuiltProject\GetSystemVariables.exe"
-        NUMBER_OF_PROCESSORS
-  
-  - task: cmdLine@2
-    inputs: 
-      script: |
-        "C:\Users\MohammedAbubakkarSid\Downloads\BuiltProject\GetSystemVariables.exe"
-        USERNAME

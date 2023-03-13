@@ -11,9 +11,12 @@ namespace GetSystemVariables
         public static void Main(string[] args)
         {
             //calling method to create text file
-            //calling process method
-            string variableName = Console.ReadLine();
-            StartProcess(variableName);
+            //storing argument name in a string array
+            string [] arguments = {"PATH", "OS", "ComSpec", "DriverData", "NUMBER_OF_PROCESSORS", "TEMP"};
+            foreach(string argument in arguments)
+            {
+                StartProcess(argument);
+            }
         }
 
         //method to create a process
@@ -27,7 +30,6 @@ namespace GetSystemVariables
             string environmentVariable = cmdStart.StartInfo.EnvironmentVariables[variableName];
             cmdStart.Start();
             CreateFile(variableName + ": " + environmentVariable);
-            Console.ReadLine();
         }
 
         //method to create new text file
