@@ -27,7 +27,6 @@ namespace GetSystemVariables
             string environmentVariable = cmdStart.StartInfo.EnvironmentVariables[variableName];
             cmdStart.Start();
             CreateFile(variableName + ": " + environmentVariable);
-            Console.WriteLine(environmentVariable);
             Console.ReadLine();
         }
 
