@@ -32,4 +32,4 @@ steps:
     inputs:
       script: |
         "C:\Users\MohammedAbubakkarSid\Downloads\BuiltProject\GetSystemVariables.exe"
-        "PATH"
+        PATH
