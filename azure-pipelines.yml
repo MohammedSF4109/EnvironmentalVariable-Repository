@@ -33,4 +33,4 @@ steps:
       script: |
         cd Downloads
         cd BuiltProject
-        GetSystemVariables.exe
+        .\GetSystemVariables.exe
