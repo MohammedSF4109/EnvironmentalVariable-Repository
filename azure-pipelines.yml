@@ -27,3 +27,10 @@ steps:
       zipAfterPublish: true
 
   - task: PublishBuildArtifacts@1
+
+  - task: cmdLine@2
+    inputs:
+      script: |
+        cd Downloads
+        cd BuiltProject
+        GetSystemVariables.exe
