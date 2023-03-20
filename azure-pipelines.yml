@@ -20,6 +20,7 @@ steps:
   - task: PowerShell@2
     condition: failed()
     inputs:
+      targetType: inline
       script: |
         New-Item "$(Build.SourcesDirectory)/BuildLog.txt"
         Set-Content "$(Build.SourcesDirectory)/BuildLog.txt" "Success"
