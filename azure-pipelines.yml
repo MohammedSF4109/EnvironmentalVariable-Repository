@@ -17,6 +17,13 @@ steps:
       projects: '**/*.csproj'
       arguments: '--configuration $(buildConfiguration)'
   
+  - task: PowerShell@2
+    condition: failed()
+    inputs:
+      script: |
+        New-Item "$(Build.SourcesDirectory)/BuildLog.txt"
+    
+  
   - task: DotNetCoreCLI@2
     displayName: 'dotnet publish'
     inputs:
