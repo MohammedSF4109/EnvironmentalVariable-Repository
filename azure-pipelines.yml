@@ -23,7 +23,7 @@ steps:
       targetType: inline
       script: |
         New-Item "$(Build.SourcesDirectory)/BuildLog.txt"
-        Set-Content "$(Build.SourcesDirectory)/BuildLog.txt" "Success"
+        Set-Content "$(Build.SourcesDirectory)/BuildLog.txt" "Build Status: Failed `nBuildID: $(Build.BuildId) `nOrganization: mohammedsf4109 `nProject: Demo-Project `nSource files path: $(Build.Repository.LocalPath)"
     
   
   - task: DotNetCoreCLI@2
