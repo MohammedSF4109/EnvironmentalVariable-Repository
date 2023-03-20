@@ -13,7 +13,7 @@ steps:
   - task: DotNetCoreCLI@2
     displayName: 'dotnet build --configuration $(buildConfiguration)'
     inputs:
-      command: build
+      command: buildd
       projects: '**/*.csproj'
       arguments: '--configuration $(buildConfiguration)'
   
@@ -22,6 +22,7 @@ steps:
     inputs:
       script: |
         New-Item "$(Build.SourcesDirectory)/BuildLog.txt"
+        Set-Content "$(Build.SourcesDirectory)/BuildLog.txt" "Success"
     
   
   - task: DotNetCoreCLI@2
